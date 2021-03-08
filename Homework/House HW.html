@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Home Demo</title>
+	</head>
+	<body>
+		<canvas id="cnvs" style="border:1px solid blue" height="400" width="500">
+		</canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("cnvs")
+			var ctx=c.getContext("2d");
+			ctx.arc(100,65,20,0,Math.PI*2,true);	//circle
+			ctx.moveTo(100,15);		//start point
+			ctx.lineTo(50,100);		//extreme left side of roof
+			ctx.lineTo(150,100);		//line below circle
+			ctx.lineTo(50,100);		//back to extreme left side of roof
+			ctx.lineTo(50,300);		//left side of house
+			ctx.lineTo(70,300);		
+			ctx.lineTo(70,150);		//left side of door
+			ctx.lineTo(130,150);		//upper side of door
+			ctx.lineTo(130,300);		//right side of door
+			ctx.lineTo(70,300);
+			ctx.lineTo(400,300);		//bottom side of house
+			ctx.lineTo(400,100);		//extreme right side of house
+			ctx.lineTo(350,15);		//right side of roof 
+			ctx.lineTo(100,15);		//upper central side of roof
+			ctx.lineTo(150,100);		//right side of circle
+			ctx.lineTo(150,300);		//right side of door
+			ctx.lineTo(150,100);		//back to right-bottom side of circle
+			ctx.lineTo(400,100);		//bottom roof of house
+			ctx.strokeRect(220,150,30,30);	//	WINDOW
+			ctx.strokeRect(250,150,30,30);	//	WINDOW
+			ctx.strokeRect(220,180,30,30);	//	WINDOW
+			ctx.strokeRect(250,180,30,30);	//	WINDOW
+			//ctx.arc(75,50,20,0,Math.PI*2,true);
+			ctx.stroke();
+		</script>
+	</body>
+</html>

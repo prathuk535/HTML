@@ -1,0 +1,25 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<canvas id="cnvs" style="border:1px solid blue" width="500" height="300">
+		</canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("cnvs");
+			var ctx=c.getContext("2d");
+			ctx.moveTo(400,100);
+			
+			ctx.lineTo(400,100);
+			ctx.bezierCurveTo(350,100,325,200,320,200);
+			ctx.lineTo(100,200);
+			ctx.bezierCurveTo(100,200,70,120,30,100);
+			
+			ctx.lineTo(100,100);
+			ctx.bezierCurveTo(100,100,135,90,170,20);
+			ctx.lineTo(170,100);
+			ctx.lineTo(100,100);
+			ctx.lineTo(400,100);
+			ctx.stroke();			
+		</script>
+	</body>
+<html>
